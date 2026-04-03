@@ -5,12 +5,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Maturita.Facade.Facade;
 
-public class UserFacade : IFacade<UserEntity>
+public class UserRepository : IRepository<UserEntity>
 {
 
     private DatabaseContext _context;
     
-    public UserFacade(DatabaseContext databaseContext)
+    public UserRepository(DatabaseContext databaseContext)
     {
         _context = databaseContext;
     }

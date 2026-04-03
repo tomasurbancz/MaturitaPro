@@ -1,6 +1,6 @@
 ﻿namespace Maturita.Facade.Facade.Interface;
 
-public interface IFacade<T> where T : class
+public interface IRepository<T> where T : class
 {
     Task<List<T>> GetAll();
     Task<T> GetById(Guid id);
